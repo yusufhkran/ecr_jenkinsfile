@@ -12,10 +12,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                sh '''
-                git clone https://github.com/yusufhkran/bcfm_academy_sprint_app.git
-                cd bcfm_academy_sprint_app/academy2024-app-main-2/frontend
-                '''
+                git branch: 'main', url: 'https://github.com/yusufhkran/bcfm_academy_sprint_app.git'
             }
         }
 
