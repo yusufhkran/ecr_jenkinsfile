@@ -4,7 +4,7 @@ pipeline {
     environment {
         AWS_DEFAULT_REGION = 'us-east-1' // Bölgeyi değiştir
         ECR_REPO = 'sprint-frontend' // ECR repository adı
-        IMAGE_TAG = "sprint_app_frontend_${BUILD_NUMBER}"
+        IMAGE_TAG = "sprint-app-frontend-${BUILD_NUMBER}"
         AWS_ACCOUNT_ID = '571600829776'
         DOCKER_IMAGE = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${ECR_REPO}:${IMAGE_TAG}"
     }
